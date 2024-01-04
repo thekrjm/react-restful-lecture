@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import './App.css';
 import ContactForm from './components/ContactForm';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { SearchBox } from './components/SearchBox';
+import { ContactList } from './components/ContactList';
 
 function App() {
   return (
@@ -12,7 +12,9 @@ function App() {
       <Container>
       <Row>
         <Col><ContactForm/></Col>
-        <Col><SearchBox/></Col>
+        <Col>
+        <ContactList/>
+        </Col>
       </Row>
       </Container>
     </div>
